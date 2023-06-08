@@ -1,0 +1,26 @@
+.modal {
+  padding: 0;
+  border: 0;
+  background-color: white;
+  border-radius: 0.25rem;
+  z-index: 10;
+  width: 30rem;
+  overflow: hidden;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+.modal.show {
+  opacity: 1; /* Show the dialog */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.3);
+}

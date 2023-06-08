@@ -1,0 +1,38 @@
+.picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 270px;
+  padding: 15px 30px;
+}
+
+.picker__title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 0px;
+}
+
+.picker__option {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  width: 80%;
+  padding: 7px 5px;
+  margin: 2px 30px;
+}
+.picker__icon {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 0.9rem;
+  width: 1.2rem;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+.picker__name {
+  color: white;
+}

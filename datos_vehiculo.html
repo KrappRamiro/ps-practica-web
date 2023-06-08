@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.jpg" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/picker.css" />
+    <link rel="stylesheet" href="css/steps.css" />
+    <link rel="stylesheet" href="css/grid-form.css" />
+    <link rel="stylesheet" href="css/tooltip.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/3ec9da0d5c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Datos de vehiculo</title>
+  </head>
+  <body>
+    <nav class="steps">
+      <h1 class="steps__title">Datos del vehículo</h1>
+      <h2 class="steps__subtitle">
+        Ingresá los datos de tu vehículo - Uso Particular
+      </h2>
+      <div class="steps__progress">
+        <div class="steps__step">
+          <div class="steps__number-wrapper number-wrapper--active">
+            <div class="steps__number">1</div>
+          </div>
+          <div class="steps__step-title">Datos del vehiculo</div>
+        </div>
+        <!-- stepsDotGenerator.js is used here to generate the dots -->
+        <div class="steps__step">
+          <div class="steps__number-wrapper number-wrapper--inactive">
+            <div class="steps__number">2</div>
+          </div>
+          <div class="steps__step-title">Cotizacion</div>
+        </div>
+        <div class="steps__step">
+          <div class="steps__number-wrapper number-wrapper--inactive">
+            <div class="steps__number">3</div>
+          </div>
+          <div class="steps__step-title">Solicitud online</div>
+        </div>
+        <div class="steps__step">
+          <div class="steps__number-wrapper number-wrapper--inactive">
+            <div class="steps__number">4</div>
+          </div>
+          <div class="steps__step-title">Confirmacion</div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <form class="grid-form">
+          <div class="grid-3-col">
+            <!-- FIRST ROW -->
+            <!-- Codigo Postal -->
+            <div class="grid-form__cell-container">
+              <!-- The oninput iwht Math.abs transform any negative number into a positive number -->
+              <input
+                class="grid-form__fullwidth-input"
+                type="number"
+                placeholder="CODIGO POSTAL *"
+                min="0"
+                oninput="this.value = Math.abs(this.value)"
+              />
+            </div>
+            <!-- Cero KM -->
+            <div class="grid-form__cell-container">
+              <div class="flex-center-container">
+                <div class="grid-form__radio-title">Cero KM</div>
+                <input
+                  type="radio"
+                  name="cero_km"
+                  id="yes"
+                  class="grid-form__radio-input"
+                />
+                <label for="yes">Sí</label>
+                <input
+                  type="radio"
+                  name="cero_km"
+                  id="no"
+                  class="grid-form__radio-input"
+                />
+                <label for="no">No</label><br />
+              </div>
+            </div>
+            <!-- Empty div -->
+            <div class="grid-form__cell-container">
+              <div></div>
+            </div>
+            <!-- SECOND ROW -->
+            <!-- Marca -->
+            <div class="grid-form__cell-container">
+              <div class="grid-2-col-9-to-1">
+                <select class="grid-form__fullwidth-input">
+                  <option value="" disabled selected>Marca</option>
+                  <option value="audi">Audi</option>
+                  <option value="bmw">BMW</option>
+                  <option value="mercedes">Mercedes-Benz</option>
+                  <option value="toyota">Toyota</option>
+                  <option value="honda">Honda</option>
+                  <option value="ford">Ford</option>
+                  <option value="chevrolet">Chevrolet</option>
+                  <option value="volkswagen">Volkswagen</option>
+                </select>
+                <div
+                  class="grid-form__fullwidth-input-hint tooltip flex-center-container"
+                >
+                  <i class="fa-solid fa-circle-info fa-xl"></i>
+                  <span class="tooltip-text tooltip-text--top"
+                    >Tooltip text</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Año de Fabricacion -->
+            <div class="grid-form__cell-container">
+              <div>
+                <!-- The oninput with Math.abs transform any negative number into a positive number -->
+                <input
+                  class="grid-form__fullwidth-input"
+                  type="number"
+                  placeholder="AÑO DE FABRICACIÓN *"
+                  min="1930"
+                  max="2050"
+                  oninput="this.value = Math.abs(this.value)"
+                />
+              </div>
+            </div>
+            <!-- Modelo -->
+            <div class="grid-form__cell-container">
+              <select class="grid-form__fullwidth-input">
+                <option value="" disabled selected>Modelo</option>
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes-Benz</option>
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                <option value="ford">Ford</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="volkswagen">Volkswagen</option>
+              </select>
+            </div>
+            <!-- THIRD ROW -->
+            <!-- Accesorios -->
+            <div class="grid-form__cell-container">
+              <select class="grid-form__fullwidth-input">
+                <option value="" disabled selected>Accesorios</option>
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes-Benz</option>
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                <option value="ford">Ford</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="volkswagen">Volkswagen</option>
+              </select>
+            </div>
+            <!-- Email -->
+            <div class="grid-form__cell-container">
+              <input
+                class="grid-form__fullwidth-input"
+                type="email"
+                placeholder="[1] Email *"
+              />
+            </div>
+            <!-- Telefono -->
+            <div class="grid-form__cell-container">
+              <input
+                class="grid-form__fullwidth-input"
+                type="tel"
+                placeholder="[1] [Cod. Area] Telefono*"
+              />
+            </div>
+          </div>
+          <div>
+            <img src="img/captcha.jpg" alt="captcha" class="captcha" />
+          </div>
+          <div class="grid-form__disclaimers">
+            <p>* Estos datos son obligatorios</p>
+            <p>
+              [1] La informacion que se Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. It has survived not only five
+              centuries, but also the leap into electronic typesetting,
+              remaining essentially unchanged. It was popularised in the 1960s
+              with the release of Letraset sheets containing Lorem Ipsum
+              passages
+              <br />
+              Hollywoo stars and celebrities, what do they know? Do they know
+              things? Let's find out!
+            </p>
+          </div>
+          <div class="flex-center-container">
+            <a href="cotizacion.html">
+              <div class="grid-form__submit-button">COTIZAR</div>
+            </a>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <!-- Images section -->
+      <section class="grid-2-col footer__image-wrapper">
+        <img src="img/footer_1.png" alt="" />
+        <img src="img/footer_2.png" alt="" />
+      </section>
+      <!-- Disclaimer -->
+      <section class="footer__disclaimer">
+        <div class="footer__disclaimer-title">Ver terminos y condiciones</div>
+        <div class="footer__disclaimer-subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra
+          ligula id libero dapibus vestibulum. Hollywoo stars and celebrities,
+          what do they know? Do they know things? Let's find out! Fusce a lacus
+          mauris. Proin euismod eros non mi accumsan, vel efficitur odio
+          dapibus. Nullam euismod arcu ac nulla placerat, eget gravida nibh
+          tempor. in faucibus orci luctus et ultrices posuere cubilia curae;
+          Quisque ph
+        </div>
+      </section>
+      <!-- Section with logos -->
+      <section class="footer__logos">
+        <!-- Footer left logos -->
+        <div class="grid-2-col footer__left-logos">
+          <div>
+            <img
+              class="image-fit"
+              src="img/provincia-seguros-blue.png"
+              alt=""
+            />
+          </div>
+          <div class="footer__contact-paragraph">
+            <p>Casa central</p>
+            <p>Carlos Pellegrini 71</p>
+            <p>CABA Argentina</p>
+            <p>Tel 0810 222 2444</p>
+          </div>
+        </div>
+        <!-- Footer right logos -->
+        <div class="grid-3-col footer__right-logos">
+          <div>
+            <img class="image-fit" src="img/grupo-provincia.png" alt="" />
+          </div>
+          <div>
+            <img class="image-fit" src="img/pdp-logo.png" alt="" />
+          </div>
+          <div>
+            <img class="image-fit" src="img/data-fiscal.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script src="js/stepsDotGenerator.js"></script>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.jpg" />
+    <script
+      src="https://kit.fontawesome.com/3ec9da0d5c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Solicitud Online</title>
+    <link rel="stylesheet" href="css/steps.css" />
+    <link rel="stylesheet" href="css/grid-form.css" />
+    <script src="js/fileReader.js"></script>
+  </head>
+  <body>
+    <section id="css"></section>
+    <section id="header"></section>
+    <nav class="steps">
+      <h1 class="steps__title">Solicitud Online</h1>
+      <h2 class="steps__subtitle">Completá tus datos</h2>
+      <div class="steps__progress">
+        <div class="steps__step">
+          <div class="steps__number-wrapper number-wrapper--completed">
+            <div class="steps__number">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+          <div class="steps__step-title">Datos del vehiculo</div>
+        </div>
+        <!-- stepsDotGenerator.js is used here to generate the dots -->
+        <div class="steps__step">
+          <div class="steps__number-wrapper number-wrapper--completed">
+            <div class="steps__number">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+          <div class="steps__step-title">Cotizacion</div>
+        </div>
+        <div class="steps__step">
+          <div class="steps__number-wrapper number-wrapper--active">
+            <div class="steps__number">3</div>
+          </div>
+          <div class="steps__step-title">Solicitud online</div>
+        </div>
+        <div class="steps__step">
+          <div class="steps__number-wrapper number-wrapper--inactive">
+            <div class="steps__number">4</div>
+          </div>
+          <div class="steps__step-title">Confirmacion</div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <form class="grid-form flex-center-container flex-column">
+        <div class="mw-1100">
+          <h1>Datos Personales</h1>
+          <section class="grid-3-col">
+            <!-- FIRST ROW -->
+            <!-- NOMBRE -->
+            <div class="grid-form__cell-container">
+              <input
+                class="grid-form__fullwidth-input"
+                type="text"
+                placeholder="NOMBRE *"
+              />
+            </div>
+            <!-- APELLIDO -->
+            <div class="grid-form__cell-container">
+              <input
+                class="grid-form__fullwidth-input"
+                type="text"
+                placeholder="APELLIDO *"
+              />
+            </div>
+            <!-- NUMERO DE DOCUMENTO (DNI) -->
+            <div class="grid-form__cell-container">
+              <input
+                class="grid-form__fullwidth-input"
+                type="text"
+                placeholder="NUMERO DE DOCUMENTO (DNI) *"
+              />
+            </div>
+            <!-- SECOND ROW -->
+            <!-- Fecha de nacimiento -->
+            <div class="grid-form__cell-container">
+              <div class="grid-2-col">
+                <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+                <input
+                  id="fecha-nacimiento"
+                  class="grid-form__fullwidth-input"
+                  type="text"
+                  placeholder="NOMBRE *"
+                />
+              </div>
+            </div>
+            <!-- SEXO -->
+            <div class="grid-form__cell-container">
+              <input
+                class="grid-form__fullwidth-input"
+                type="text"
+                placeholder="SEXO *"
+              />
+            </div>
+            <!-- ESTADO CIVIL -->
+            <div class="grid-form__cell-container">
+              <input
+                class="grid-form__fullwidth-input"
+                type="text"
+                placeholder="ESTADO CIVIL *"
+              />
+            </div>
+            <!-- THIRD ROW -->
+            <!-- NACIONALIDAD -->
+            <div class="grid-form__cell-container">
+              <input
+                class="grid-form__fullwidth-input"
+                type="text"
+                placeholder="NACIONALIDAD *"
+              />
+            </div>
+            <!-- PROFESION -->
+            <div class="grid-form__cell-container">
+              <input
+                class="grid-form__fullwidth-input"
+                type="text"
+                placeholder="PROFESION *"
+              />
+            </div>
+            <!-- Correo -->
+            <div class="grid-form__cell-container">
+              <input
+                class="grid-form__fullwidth-input"
+                type="email"
+                placeholder="correo@correo.com *"
+              />
+            </div>
+            <!-- FOURTH ROW -->
+            <!-- Celular -->
+            <div class="grid-form__cell-container">
+              <div class="grid-2-col">
+                <label for="celular">Celular</label>
+                <input
+                  id="celular"
+                  class="grid-form__fullwidth-input"
+                  type="tel"
+                  placeholder="celular"
+                />
+              </div>
+            </div>
+            <!-- Telefono -->
+            <div class="grid-form__cell-container">
+              <div class="grid-2-col">
+                <label for="telefono">Telefono</label>
+                <input
+                  id="telefono"
+                  class="grid-form__fullwidth-input"
+                  type="tel"
+                  placeholder="Telefono"
+                />
+              </div>
+            </div>
+            <!-- Empty div -->
+            <div></div>
+            <!-- FIFTH ROW -->
+            <!-- Persona politicamente expuesta -->
+            <div class="flex-center-container">
+              <div class="grid-form__radio-title">
+                Sos una persona politicamente expuesta?
+              </div>
+              <input
+                type="radio"
+                name="cero_km"
+                id="yes"
+                class="grid-form__radio-input"
+              />
+              <label for="yes">Sí</label>
+              <input
+                type="radio"
+                name="cero_km"
+                id="no"
+                class="grid-form__radio-input"
+              />
+              <label for="no">No</label><br />
+            </div>
+          </section>
+
+          <h1>Domicilio</h1>
+          <section>
+            <div class="grid-2-col-1-to-2">
+              <!-- Empty div -->
+              <div></div>
+              <!-- CALLE -->
+              <div class="grid-form__cell-container">
+                <input
+                  class="grid-form__fullwidth-input"
+                  type="text"
+                  placeholder="CALLE *"
+                />
+              </div>
+              <!-- CODIGO POSTAL -->
+              <div class="grid-form__cell-container">
+                <input
+                  class="grid-form__fullwidth-input"
+                  type="text"
+                  placeholder="CODIGO POSTAL *"
+                />
+              </div>
+              <div class="grid-form__cell-container">
+                <select class="grid-form__fullwidth-input">
+                  <option value="" disabled selected>Marca</option>
+                  <option value="audi">Audi</option>
+                  <option value="bmw">BMW</option>
+                  <option value="mercedes">Mercedes-Benz</option>
+                  <option value="toyota">Toyota</option>
+                  <option value="honda">Honda</option>
+                  <option value="ford">Ford</option>
+                  <option value="chevrolet">Chevrolet</option>
+                  <option value="volkswagen">Volkswagen</option>
+                </select>
+              </div>
+            </div>
+            <br />
+            <div class="grid-3-col">
+              <div class="grid-form__cell-container">
+                <input
+                  class="grid-form__fullwidth-input"
+                  type="text"
+                  placeholder="NUMERO *"
+                />
+              </div>
+              <div class="grid-form__cell-container">
+                <input
+                  class="grid-form__fullwidth-input"
+                  type="text"
+                  placeholder="PROVINCIA *"
+                />
+              </div>
+              <div class="grid-form__cell-container">
+                <input
+                  class="grid-form__fullwidth-input"
+                  type="text"
+                  placeholder="LOCALIDAD *"
+                />
+              </div>
+              <div class="grid-form__cell-container">
+                <input
+                  class="grid-form__fullwidth-input"
+                  type="text"
+                  placeholder="PISO *"
+                />
+              </div>
+              <div class="grid-form__cell-container">
+                <input
+                  class="grid-form__fullwidth-input"
+                  type="text"
+                  placeholder="DEPARTAMENTO *"
+                />
+              </div>
+              <div class="grid-form__cell-container">
+                <input
+                  class="grid-form__fullwidth-input"
+                  type="text"
+                  placeholder="UNIDAD *"
+                />
+              </div>
+            </div>
+          </section>
+          <h1>Datos del Vehiculo</h1>
+          <section>
+            <div class="grid-3-col">
+              <div class="grid-form__cell-container">
+                <input
+                  class="grid-form__fullwidth-input"
+                  type="text"
+                  placeholder="PATENTE *"
+                />
+              </div>
+              <div class="grid-form__cell-container">
+                <input
+                  class="grid-form__fullwidth-input"
+                  type="text"
+                  placeholder="NUMERO DE MOTOR *"
+                />
+              </div>
+              <div class="grid-form__cell-container">
+                <input
+                  class="grid-form__fullwidth-input"
+                  type="text"
+                  placeholder="NUMERO DE CHASIS *"
+                />
+              </div>
+            </div>
+          </section>
+          <h1>Datos de Inspección</h1>
+          <section>
+            <div class="grid-3-col">
+              <!-- Telefono -->
+              <div class="grid-form__cell-container">
+                <div class="grid-2-col">
+                  <label for="telefono">Telefono</label>
+                  <input
+                    id="telefono"
+                    class="grid-form__fullwidth-input"
+                    type="tel"
+                    placeholder="Telefono"
+                  />
+                </div>
+              </div>
+              <div class="grid-form__cell-container">
+                <input
+                  class="grid-form__fullwidth-input"
+                  type="email"
+                  placeholder="EMAIL DE INSPECCION *"
+                />
+              </div>
+            </div>
+          </section>
+          <h1>Forma de Pago</h1>
+          <section>
+            <div class="grid-3-col">
+              <div class="grid-form__cell-container">
+                <select class="grid-form__fullwidth-input">
+                  <option value="" disabled selected>
+                    ¿CÓMO QUERES PAGAR?
+                  </option>
+                  <option value="audi">Audi</option>
+                  <option value="bmw">BMW</option>
+                  <option value="mercedes">Mercedes-Benz</option>
+                  <option value="toyota">Toyota</option>
+                  <option value="honda">Honda</option>
+                  <option value="ford">Ford</option>
+                  <option value="chevrolet">Chevrolet</option>
+                  <option value="volkswagen">Volkswagen</option>
+                </select>
+              </div>
+            </div>
+          </section>
+          <p class="text-sm">* Estos datos son obligatorios</p>
+          <div class="flex-center-container mt-30">
+            <button class="grid-form__alternate-button">ANTERIOR</button>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+              <div class="grid-form__submit-button">CONTINUAR</div>
+            </a>
+            <button class="grid-form__alternate-button">CONTACTAME</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <section id="footer"></section>
+    <script>
+      readHTMLFile("components/footer.html", "footer");
+      readHTMLFile("components/header.html", "header");
+      readHTMLFile("components/css.html", "css");
+    </script>
+    <script src="js/stepsDotGenerator.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+/* TODO: Remember to style the inputs to have width=100% */
+.grid-form {
+  background-color: var(--ps-light-grey);
+  padding: 50px 20px;
+}
+.grid-2-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.grid-3-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 15px;
+}
+
+.grid-2-col-9-to-1 {
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  align-items: center;
+}
+
+.grid-2-col-1-to-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 8px;
+}
+
+.grid-form__fullwidth-input {
+  width: 100%; /* Use the full width of the parent div */
+  padding: 10px;
+  border: 1px rgba(0, 0, 0, 0.2) solid;
+  border-radius: 5px;
+  box-sizing: border-box; /*Para evitar el overflow usando padding*/
+}
+
+.grid-form__fullwidth-input:not([type="email"]),
+.grid-form__fullwidth-input option, /*Add support to <select>*/
+.grid-form__fullwidth-input::placeholder {
+  font-stretch: condensed;
+  text-transform: uppercase;
+}
+
+.grid-form__radio-title {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.grid-form__radio-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  outline: none;
+  position: relative;
+  margin-left: 15px;
+  background-color: white;
+}
+
+/* Style the inner circle */
+input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 40%;
+  background-color: #333;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grid-form__input-hint {
+  height: 100%;
+}
+
+.grid-form__submit-button {
+  padding: 10px 150px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.grid-form__alternate-button {
+  padding: 10px 100px;
+  border-radius: 5px;
+  border: 0;
+  background-color: var(--ps-grey);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.captcha {
+  margin-top: 20px;
+}
+
+.grid-form__disclaimers {
+  font-size: 0.7rem;
+  font-stretch: condensed;
+}
