@@ -25,10 +25,13 @@
       src="https://kit.fontawesome.com/3ec9da0d5c.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/fileReader.js"></script>
 
     <title>Datos de vehiculo</title>
   </head>
   <body>
+    <section id="css"></section>
+    <section id="header"></section>
     <nav class="steps">
       <h1 class="steps__title">Datos del vehículo</h1>
       <h2 class="steps__subtitle">
@@ -212,57 +215,12 @@
         </form>
       </section>
     </main>
-    <footer class="footer">
-      <!-- Images section -->
-      <section class="grid-2-col footer__image-wrapper">
-        <img src="img/footer_1.png" alt="" />
-        <img src="img/footer_2.png" alt="" />
-      </section>
-      <!-- Disclaimer -->
-      <section class="footer__disclaimer">
-        <div class="footer__disclaimer-title">Ver terminos y condiciones</div>
-        <div class="footer__disclaimer-subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra
-          ligula id libero dapibus vestibulum. Hollywoo stars and celebrities,
-          what do they know? Do they know things? Let's find out! Fusce a lacus
-          mauris. Proin euismod eros non mi accumsan, vel efficitur odio
-          dapibus. Nullam euismod arcu ac nulla placerat, eget gravida nibh
-          tempor. in faucibus orci luctus et ultrices posuere cubilia curae;
-          Quisque ph
-        </div>
-      </section>
-      <!-- Section with logos -->
-      <section class="footer__logos">
-        <!-- Footer left logos -->
-        <div class="grid-2-col footer__left-logos">
-          <div>
-            <img
-              class="image-fit"
-              src="img/provincia-seguros-blue.png"
-              alt=""
-            />
-          </div>
-          <div class="footer__contact-paragraph">
-            <p>Casa central</p>
-            <p>Carlos Pellegrini 71</p>
-            <p>CABA Argentina</p>
-            <p>Tel 0810 222 2444</p>
-          </div>
-        </div>
-        <!-- Footer right logos -->
-        <div class="grid-3-col footer__right-logos">
-          <div>
-            <img class="image-fit" src="img/grupo-provincia.png" alt="" />
-          </div>
-          <div>
-            <img class="image-fit" src="img/pdp-logo.png" alt="" />
-          </div>
-          <div>
-            <img class="image-fit" src="img/data-fiscal.png" alt="" />
-          </div>
-        </div>
-      </section>
-    </footer>
+    <section id="footer"></section>
+    <script>
+      readHTMLFile("components/footer.html", "footer");
+      readHTMLFile("components/header.html", "header");
+      readHTMLFile("components/css.html", "css");
+    </script>
   </body>
   <script src="js/stepsDotGenerator.js"></script>
 </html>
