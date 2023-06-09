@@ -32,6 +32,9 @@
 .card-datos__title {
   font-size: 1.5rem;
 }
+.card-promocion__info-line-line-under {
+  border-bottom: 1px solid grey;
+}
 
 .promociones {
   display: flex;
