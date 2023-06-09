@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.jpg" />
+    <script
+      src="https://kit.fontawesome.com/3ec9da0d5c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Solicitud Online</title>
+    <link rel="stylesheet" href="css/steps.css" />
+    <link rel="stylesheet" href="css/grid-form.css" />
+    <link rel="stylesheet" href="css/picker.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/blur-background.css" />
+    <script src="js/fileReader.js"></script>
+  </head>
+  <body>
+    <section id="css"></section>
+    <section id="header"></section>
+    <main>
+      <div class="blur-background">
+        <div class="blur-overlay"></div>
+        <div class="blur-content">
+          <div class="content">
+            <div class="picker">
+              <h1 class="picker__title">Su pedido ha sido confirmado</h1>
+              <h2>Nos contactaremos</h2>
+              <h1 style="font-size: 3rem">
+                <i class="fa-regular fa-check"></i>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section id="footer"></section>
+    <script>
+      readHTMLFile("components/footer.html", "footer");
+      readHTMLFile("components/header.html", "header");
+      readHTMLFile("components/css.html", "css");
+    </script>
+  </body>
+</html>
