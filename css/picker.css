@@ -5,30 +5,42 @@
   justify-content: center;
   background-color: white;
   border-radius: 10px;
-  width: 270px;
-  padding: 15px 30px;
+
+  padding: 15px 30px 30px 15px;
 }
 
 .picker__title {
   text-align: center;
-  font-size: 1.5rem;
-  margin-top: 0px;
+  font-weight: 400;
+  color: gray;
+  font-size: 2.5rem;
+  margin-top: 0px 10px 0px 10px;
+  max-width: fit-content;
 }
 
+.picker__options-wrapper {
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .picker__option {
+  box-sizing: border-box; /*Make the element adjust its size to the parent wrapper*/
+  width: 100%;
   display: flex;
   align-items: center;
   background-color: var(--primary-color);
   border-radius: 7px;
-  width: 80%;
-  padding: 7px 5px;
+  padding: 10px 10px;
   margin: 2px 30px;
+  font-size: 1.5rem;
 }
 .picker__icon {
   display: flex;
   justify-content: center;
   color: white;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   width: 1.2rem;
   margin-left: 5px;
   margin-right: 15px;

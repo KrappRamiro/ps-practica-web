@@ -1,0 +1,22 @@
+/* || MODAL */
+/* Styles specific to the modal for the promotion card */
+
+.modal-promocion {
+  border: 2px var(--ps-green) solid;
+}
+.modal-promocion__infoline {
+  box-sizing: border-box;
+  width: 95%;
+  border-bottom: 1px var(--ps-light-grey) solid;
+  margin-top: 7px;
+}
+
+/* Styles for the top section of the promotion card */
+.modal-promocion__top {
+  text-align: center;
+  background-color: var(--ps-green);
+  color: white;
+  clip-path: polygon(0 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
+  padding: 20px 80px;
+  font-weight: 500;
+}

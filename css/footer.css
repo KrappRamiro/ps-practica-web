@@ -1,11 +1,13 @@
 .footer__image-wrapper {
-  margin-top: 50px;
-  margin-bottom: 60px;
+  width: 95vw; /* Set container width to 100% of the viewport width */
+  height: 10vh; /* Set container height to 100% of the viewport height */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  margin: 50px auto 60px auto;
+  gap: 20px;
 }
-
 .footer__disclaimer {
   text-align: center;
   margin: 10px 15%;

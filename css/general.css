@@ -17,6 +17,11 @@ body {
   height: 100%;
   object-fit: contain;
 }
+.img-container img {
+  max-width: 100%; /* Limit the image width to the container width */
+  max-height: 100%; /* Limit the image height to the container height */
+  object-fit: cover; /* Resize the image to cover the container while maintaining aspect ratio */
+}
 
 .w-75 {
   width: 75%;
@@ -62,4 +67,8 @@ body {
 
 .mw-1100 {
   max-width: 1100px;
+}
+
+.bg-light-gray {
+  background-color: var(--ps-light-grey);
 }

@@ -1,3 +1,4 @@
+/* Styles for the promotion card */
 .card-promocion {
   border: 1px var(--primary-color) solid;
   z-index: 2;
@@ -7,13 +8,15 @@
   border-radius: 5px;
 }
 
+/* Styles for a big promotion card */
 .card-promocion--big {
-  border: 2px #09ac93 solid;
+  border: 2px var(--ps-green) solid;
   z-index: 4;
   margin-left: -20px;
   margin-right: -20px;
 }
 
+/* Styles for the top section of the promotion card */
 .card-promocion__top {
   background-color: var(--primary-color);
   color: white;
@@ -21,11 +24,14 @@
   padding: 20px 80px;
   font-weight: 500;
 }
+
+/* Styles for the featured top section of the promotion card */
 .card-promocion__top--featured {
-  background-color: #09ac93;
+  background-color: var(--ps-green);
   padding: 20px 100px;
 }
 
+/* Styles for the bottom section of the promotion card */
 .card-promocion__bottom {
   padding-top: 20px;
   background-color: white;
@@ -36,11 +42,13 @@
   justify-content: center;
 }
 
-.card-promocion__info-line {
+/* Styles for the lines of information in the promotion card */
+.card-promocion__infoline {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
+/* Styles for the information button in the promotion card */
 .card-promocion__info-button {
   text-transform: uppercase;
   background-color: white;
@@ -51,6 +59,7 @@
   padding: 10px 20px;
 }
 
+/* Styles for the buy button in the promotion card */
 .card-promocion__buy-button {
   background-color: var(--primary-color);
   color: white;
@@ -62,6 +71,9 @@
   text-transform: uppercase;
 }
 
+/* || Strikethrough */
+
+/* Strikethrough effect for discounts */
 .strike-through {
   position: relative;
   overflow: hidden;

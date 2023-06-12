@@ -59,17 +59,16 @@
         </div>
       </div>
     </nav>
-
-    <main>
-      <form class="grid-form flex-center-container flex-column">
-        <div class="mw-1100">
+    <main class="flex-center-container bg-light-gray">
+      <section class="mw-1100">
+        <form class="grid-form">
           <h1>Datos Personales</h1>
           <section class="grid-3-col">
             <!-- FIRST ROW -->
             <!-- NOMBRE -->
             <div class="grid-form__cell-container">
               <input
-                class="grid-form__fullwidth-input"
+                class="grid-form__input grid-form__input--fullwidth"
                 type="text"
                 placeholder="NOMBRE *"
               />
@@ -77,7 +76,7 @@
             <!-- APELLIDO -->
             <div class="grid-form__cell-container">
               <input
-                class="grid-form__fullwidth-input"
+                class="grid-form__input grid-form__input--fullwidth"
                 type="text"
                 placeholder="APELLIDO *"
               />
@@ -85,7 +84,7 @@
             <!-- NUMERO DE DOCUMENTO (DNI) -->
             <div class="grid-form__cell-container">
               <input
-                class="grid-form__fullwidth-input"
+                class="grid-form__input grid-form__input--fullwidth"
                 type="text"
                 placeholder="NUMERO DE DOCUMENTO (DNI) *"
               />
@@ -97,7 +96,7 @@
                 <label for="fecha-nacimiento">Fecha de Nacimiento</label>
                 <input
                   id="fecha-nacimiento"
-                  class="grid-form__fullwidth-input"
+                  class="grid-form__input grid-form__input--fullwidth"
                   type="text"
                   placeholder="NOMBRE *"
                 />
@@ -106,7 +105,7 @@
             <!-- SEXO -->
             <div class="grid-form__cell-container">
               <input
-                class="grid-form__fullwidth-input"
+                class="grid-form__input grid-form__input--fullwidth"
                 type="text"
                 placeholder="SEXO *"
               />
@@ -114,7 +113,7 @@
             <!-- ESTADO CIVIL -->
             <div class="grid-form__cell-container">
               <input
-                class="grid-form__fullwidth-input"
+                class="grid-form__input grid-form__input--fullwidth"
                 type="text"
                 placeholder="ESTADO CIVIL *"
               />
@@ -123,7 +122,7 @@
             <!-- NACIONALIDAD -->
             <div class="grid-form__cell-container">
               <input
-                class="grid-form__fullwidth-input"
+                class="grid-form__input grid-form__input--fullwidth"
                 type="text"
                 placeholder="NACIONALIDAD *"
               />
@@ -131,7 +130,7 @@
             <!-- PROFESION -->
             <div class="grid-form__cell-container">
               <input
-                class="grid-form__fullwidth-input"
+                class="grid-form__input grid-form__input--fullwidth"
                 type="text"
                 placeholder="PROFESION *"
               />
@@ -139,7 +138,7 @@
             <!-- Correo -->
             <div class="grid-form__cell-container">
               <input
-                class="grid-form__fullwidth-input"
+                class="grid-form__input grid-form__input--fullwidth"
                 type="email"
                 placeholder="correo@correo.com *"
               />
@@ -147,27 +146,39 @@
             <!-- FOURTH ROW -->
             <!-- Celular -->
             <div class="grid-form__cell-container">
-              <div class="grid-2-col">
-                <label for="celular">Celular</label>
+              <div class="flex-center-container">
+                <label for="celular" class="mr-5">Celular</label>
+                0
                 <input
                   id="celular"
-                  class="grid-form__fullwidth-input"
+                  class="grid-form__input grid-form__input--ssm mx-5"
                   type="tel"
-                  placeholder="celular"
+                  placeholder="COD AREA"
+                />
+                15
+                <input
+                  id="celular-2"
+                  class="grid-form__input grid-form__input--sm mx-5"
+                  type="tel"
+                  placeholder="TELEFONO"
                 />
               </div>
             </div>
             <!-- Telefono -->
             <div class="grid-form__cell-container">
-              <div class="grid-2-col">
-                <label for="telefono">Telefono</label>
-                <input
-                  id="telefono"
-                  class="grid-form__fullwidth-input"
-                  type="tel"
-                  placeholder="Telefono"
-                />
-              </div>
+              <label for="telefono">Telefono</label>
+              <input
+                id="telefono"
+                class="grid-form__input grid-form__input--sm"
+                type="tel"
+                placeholder="11"
+              />
+              <input
+                id="telefono"
+                class="grid-form__input grid-form__input--sm"
+                type="tel"
+                placeholder="2636-8776"
+              />
             </div>
             <!-- Empty div -->
             <div></div>
@@ -202,7 +213,7 @@
               <!-- CALLE -->
               <div class="grid-form__cell-container">
                 <input
-                  class="grid-form__fullwidth-input"
+                  class="grid-form__input grid-form__input--fullwidth"
                   type="text"
                   placeholder="CALLE *"
                 />
@@ -210,13 +221,13 @@
               <!-- CODIGO POSTAL -->
               <div class="grid-form__cell-container">
                 <input
-                  class="grid-form__fullwidth-input"
+                  class="grid-form__input grid-form__input--fullwidth"
                   type="text"
                   placeholder="CODIGO POSTAL *"
                 />
               </div>
               <div class="grid-form__cell-container">
-                <select class="grid-form__fullwidth-input">
+                <select class="grid-form__input grid-form__input--fullwidth">
                   <option value="" disabled selected>Marca</option>
                   <option value="audi">Audi</option>
                   <option value="bmw">BMW</option>
@@ -233,42 +244,42 @@
             <div class="grid-3-col">
               <div class="grid-form__cell-container">
                 <input
-                  class="grid-form__fullwidth-input"
+                  class="grid-form__input grid-form__input--fullwidth"
                   type="text"
                   placeholder="NUMERO *"
                 />
               </div>
               <div class="grid-form__cell-container">
                 <input
-                  class="grid-form__fullwidth-input"
+                  class="grid-form__input grid-form__input--fullwidth"
                   type="text"
                   placeholder="PROVINCIA *"
                 />
               </div>
               <div class="grid-form__cell-container">
                 <input
-                  class="grid-form__fullwidth-input"
+                  class="grid-form__input grid-form__input--fullwidth"
                   type="text"
                   placeholder="LOCALIDAD *"
                 />
               </div>
               <div class="grid-form__cell-container">
                 <input
-                  class="grid-form__fullwidth-input"
+                  class="grid-form__input grid-form__input--fullwidth"
                   type="text"
                   placeholder="PISO *"
                 />
               </div>
               <div class="grid-form__cell-container">
                 <input
-                  class="grid-form__fullwidth-input"
+                  class="grid-form__input grid-form__input--fullwidth"
                   type="text"
                   placeholder="DEPARTAMENTO *"
                 />
               </div>
               <div class="grid-form__cell-container">
                 <input
-                  class="grid-form__fullwidth-input"
+                  class="grid-form__input grid-form__input--fullwidth"
                   type="text"
                   placeholder="UNIDAD *"
                 />
@@ -280,21 +291,21 @@
             <div class="grid-3-col">
               <div class="grid-form__cell-container">
                 <input
-                  class="grid-form__fullwidth-input"
+                  class="grid-form__input grid-form__input--fullwidth"
                   type="text"
                   placeholder="PATENTE *"
                 />
               </div>
               <div class="grid-form__cell-container">
                 <input
-                  class="grid-form__fullwidth-input"
+                  class="grid-form__input grid-form__input--fullwidth"
                   type="text"
                   placeholder="NUMERO DE MOTOR *"
                 />
               </div>
               <div class="grid-form__cell-container">
                 <input
-                  class="grid-form__fullwidth-input"
+                  class="grid-form__input grid-form__input--fullwidth"
                   type="text"
                   placeholder="NUMERO DE CHASIS *"
                 />
@@ -306,22 +317,47 @@
             <div class="grid-3-col">
               <!-- Telefono -->
               <div class="grid-form__cell-container">
-                <div class="grid-2-col">
-                  <label for="telefono">Telefono</label>
+                <div class="flex-center-container">
+                  <label for="celular" class="mr-5">Celular</label>
+                  0
                   <input
-                    id="telefono"
-                    class="grid-form__fullwidth-input"
+                    id="celular"
+                    class="grid-form__input grid-form__input--ssm mx-5"
                     type="tel"
-                    placeholder="Telefono"
+                    placeholder="COD AREA"
                   />
+                  15
+                  <input
+                    id="celular-2"
+                    class="grid-form__input grid-form__input--sm mx-5"
+                    type="tel"
+                    placeholder="TELEFONO"
+                  />
+                  <span class="tooltip">
+                    <i
+                      class="fa-solid fa-circle-info"
+                      style="color: #8d9096"
+                    ></i>
+                    <span class="tooltip-text tooltip-text--left">
+                      Aca iría info
+                    </span>
+                  </span>
                 </div>
               </div>
-              <div class="grid-form__cell-container">
+              <div class="grid-form__cell-container grid-2-col-9-to-1">
                 <input
-                  class="grid-form__fullwidth-input"
+                  class="grid-form__input grid-form__input--fullwidth"
                   type="email"
                   placeholder="EMAIL DE INSPECCION *"
                 />
+                <span
+                  class="grid-form__input-hint tooltip flex-center-container"
+                >
+                  <i class="fa-solid fa-circle-info" style="color: #8d9096"></i>
+                  <span class="tooltip-text tooltip-text--left">
+                    Aca iría info
+                  </span>
+                </span>
               </div>
             </div>
           </section>
@@ -329,7 +365,7 @@
           <section>
             <div class="grid-3-col">
               <div class="grid-form__cell-container">
-                <select class="grid-form__fullwidth-input">
+                <select class="grid-form__input grid-form__input--fullwidth">
                   <option value="" disabled selected>
                     ¿CÓMO QUERES PAGAR?
                   </option>
@@ -346,16 +382,27 @@
             </div>
           </section>
           <p class="text-sm">* Estos datos son obligatorios</p>
-          <div class="flex-center-container mt-30">
-            <button class="grid-form__alternate-button">ANTERIOR</button>
-            <a href="confirmacion.html">
-              <div class="grid-form__submit-button">CONTINUAR</div>
+          <div class="grid-form__buttons">
+            <a href="">
+              <button type="button" class="grid-form__alternate-button">
+                ANTERIOR
+              </button>
             </a>
-            <button class="grid-form__alternate-button">CONTACTAME</button>
+            <a href="confirmacion.html">
+              <button type="button" class="grid-form__submit-button">
+                CONTINUAR
+              </button>
+            </a>
+            <a href="">
+              <button type="button" class="grid-form__alternate-button">
+                CONTACTAME
+              </button>
+            </a>
           </div>
-        </div>
-      </form>
+        </form>
+      </section>
     </main>
+
     <section id="footer"></section>
     <script>
       readHTMLFile("components/footer.html", "footer");

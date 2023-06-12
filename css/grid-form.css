@@ -1,6 +1,5 @@
 /* TODO: Remember to style the inputs to have width=100% */
 .grid-form {
-  background-color: var(--ps-light-grey);
   padding: 50px 20px;
 }
 .grid-2-col {
@@ -29,17 +28,26 @@
   gap: 8px;
 }
 
-.grid-form__fullwidth-input {
-  width: 100%; /* Use the full width of the parent div */
+.grid-form__input {
   padding: 10px;
   border: 1px rgba(0, 0, 0, 0.2) solid;
   border-radius: 5px;
   box-sizing: border-box; /*Para evitar el overflow usando padding*/
 }
+.grid-form__input--ssm {
+  width: 110px;
+}
+.grid-form__input--sm {
+  width: 130px;
+}
 
-.grid-form__fullwidth-input:not([type="email"]),
-.grid-form__fullwidth-input option, /*Add support to <select>*/
-.grid-form__fullwidth-input::placeholder {
+.grid-form__input--fullwidth {
+  width: 100%; /* Use the full width of the parent div */
+}
+
+.grid-form__input--fullwidth:not([type="email"]),
+.grid-form__input--fullwidth option, /*Add support to <select>*/
+.grid-form__input--fullwidth::placeholder {
   font-stretch: condensed;
   text-transform: uppercase;
 }
@@ -79,6 +87,19 @@ input[type="radio"]:checked::before {
   height: 100%;
 }
 
+.grid-form__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media (width>900px) {
+  .grid-form__buttons {
+    flex-direction: row;
+  }
+}
+
 .grid-form__submit-button {
   padding: 10px 150px;
   border-radius: 5px;
@@ -90,7 +111,7 @@ input[type="radio"]:checked::before {
   margin-right: 10px;
 }
 .grid-form__alternate-button {
-  padding: 10px 100px;
+  padding: 10px 40px;
   border-radius: 5px;
   border: 0;
   background-color: var(--ps-grey);

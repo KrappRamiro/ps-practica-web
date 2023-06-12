@@ -65,8 +65,8 @@
         </div>
       </div>
     </nav>
-    <main>
-      <section>
+    <main class="flex-center-container bg-light-gray">
+      <section class="mw-1100">
         <form class="grid-form">
           <div class="grid-3-col">
             <!-- FIRST ROW -->
@@ -74,7 +74,7 @@
             <div class="grid-form__cell-container">
               <!-- The oninput iwht Math.abs transform any negative number into a positive number -->
               <input
-                class="grid-form__fullwidth-input"
+                class="grid-form__input grid-form__input--fullwidth"
                 type="number"
                 placeholder="CODIGO POSTAL *"
                 min="0"
@@ -109,7 +109,7 @@
             <!-- Marca -->
             <div class="grid-form__cell-container">
               <div class="grid-2-col-9-to-1">
-                <select class="grid-form__fullwidth-input">
+                <select class="grid-form__input grid-form__input--fullwidth">
                   <option value="" disabled selected>Marca</option>
                   <option value="audi">Audi</option>
                   <option value="bmw">BMW</option>
@@ -121,7 +121,7 @@
                   <option value="volkswagen">Volkswagen</option>
                 </select>
                 <div
-                  class="grid-form__fullwidth-input-hint tooltip flex-center-container"
+                  class="grid-form__input-hint tooltip flex-center-container"
                 >
                   <i class="fa-solid fa-circle-info fa-xl"></i>
                   <span class="tooltip-text tooltip-text--top"
@@ -135,7 +135,7 @@
               <div>
                 <!-- The oninput with Math.abs transform any negative number into a positive number -->
                 <input
-                  class="grid-form__fullwidth-input"
+                  class="grid-form__input grid-form__input--fullwidth"
                   type="number"
                   placeholder="AÑO DE FABRICACIÓN *"
                   min="1930"
@@ -146,7 +146,7 @@
             </div>
             <!-- Modelo -->
             <div class="grid-form__cell-container">
-              <select class="grid-form__fullwidth-input">
+              <select class="grid-form__input grid-form__input--fullwidth">
                 <option value="" disabled selected>Modelo</option>
                 <option value="audi">Audi</option>
                 <option value="bmw">BMW</option>
@@ -161,7 +161,7 @@
             <!-- THIRD ROW -->
             <!-- Accesorios -->
             <div class="grid-form__cell-container">
-              <select class="grid-form__fullwidth-input">
+              <select class="grid-form__input grid-form__input--fullwidth">
                 <option value="" disabled selected>Accesorios</option>
                 <option value="audi">Audi</option>
                 <option value="bmw">BMW</option>
@@ -176,7 +176,7 @@
             <!-- Email -->
             <div class="grid-form__cell-container">
               <input
-                class="grid-form__fullwidth-input"
+                class="grid-form__input grid-form__input--fullwidth"
                 type="email"
                 placeholder="[1] Email *"
               />
@@ -184,14 +184,19 @@
             <!-- Telefono -->
             <div class="grid-form__cell-container">
               <input
-                class="grid-form__fullwidth-input"
+                class="grid-form__input grid-form__input--fullwidth"
                 type="tel"
                 placeholder="[1] [Cod. Area] Telefono*"
               />
             </div>
           </div>
           <div>
-            <img src="img/captcha.jpg" alt="captcha" class="captcha" />
+            <img
+              src="img/captcha.gif"
+              alt="captcha"
+              class="captcha"
+              width="300px"
+            />
           </div>
           <div class="grid-form__disclaimers">
             <p>* Estos datos son obligatorios</p>

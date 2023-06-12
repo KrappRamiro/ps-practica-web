@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/steps.css" />
     <link rel="stylesheet" href="css/cotizacion.css" />
     <link rel="stylesheet" href="css/card-promocion.css" />
+    <link rel="stylesheet" href="css/modal-promocion.css" />
     <script
       src="https://kit.fontawesome.com/3ec9da0d5c.js"
       crossorigin="anonymous"
@@ -94,7 +95,7 @@
             <p class="my-0 text-sm">Ahorro</p>
           </div>
           <div class="card-promocion__bottom">
-            <div class="card-promocion__info-line">
+            <div class="card-promocion__infoline">
               <i class="fa-solid fa-check" style="color: #26a215"></i>
               <span>Robo Hurto/lncendio Total</span>
               <span class="tooltip">
@@ -104,7 +105,7 @@
                 </span>
               </span>
             </div>
-            <div class="card-promocion__info-line">
+            <div class="card-promocion__infoline">
               <i class="fa-solid fa-check" style="color: #26a215"></i>
               <span>Robo Hurto/lncendio Total</span>
               <span class="tooltip">
@@ -114,7 +115,7 @@
                 </span>
               </span>
             </div>
-            <div class="card-promocion__info-line">
+            <div class="card-promocion__infoline">
               <i class="fa-solid fa-check" style="color: #26a215"></i>
               <span>Robo Hurto/lncendio Total</span>
               <span class="tooltip">
@@ -144,10 +145,10 @@
               <span>/ MES</span>
             </p>
             <p class="my-0 text-sm">TERCEROS</p>
-            <p class="my-0 text-sm">Ahorro</p>
+            <p class="my-0 text-sm">Completo</p>
           </div>
           <div class="card-promocion__bottom">
-            <div class="card-promocion__info-line">
+            <div class="card-promocion__infoline">
               <i class="fa-solid fa-check" style="color: #26a215"></i>
               <span>Robo Hurto/lncendio Total</span>
               <span class="tooltip">
@@ -157,7 +158,7 @@
                 </span>
               </span>
             </div>
-            <div class="card-promocion__info-line">
+            <div class="card-promocion__infoline">
               <i class="fa-solid fa-check" style="color: #26a215"></i>
               <span>Robo Hurto/lncendio Total</span>
               <span class="tooltip">
@@ -167,7 +168,7 @@
                 </span>
               </span>
             </div>
-            <div class="card-promocion__info-line">
+            <div class="card-promocion__infoline">
               <i class="fa-solid fa-check" style="color: #26a215"></i>
               <span>Robo Hurto/lncendio Total</span>
               <span class="tooltip">
@@ -177,7 +178,7 @@
                 </span>
               </span>
             </div>
-            <div class="card-promocion__info-line">
+            <div class="card-promocion__infoline">
               <i class="fa-solid fa-check" style="color: #26a215"></i>
               <span>Robo Hurto/lncendio Total</span>
               <span class="tooltip">
@@ -187,7 +188,7 @@
                 </span>
               </span>
             </div>
-            <div class="card-promocion__info-line">
+            <div class="card-promocion__infoline">
               <i class="fa-solid fa-check" style="color: #26a215"></i>
               <span>Robo Hurto/lncendio Total</span>
               <span class="tooltip">
@@ -197,7 +198,7 @@
                 </span>
               </span>
             </div>
-            <div class="card-promocion__info-line">
+            <div class="card-promocion__infoline">
               <i class="fa-solid fa-check" style="color: #26a215"></i>
               <span>Robo Hurto/lncendio Total</span>
               <span class="tooltip">
@@ -226,10 +227,10 @@
               <span>/ MES</span>
             </p>
             <p class="my-0 text-sm">TERCEROS</p>
-            <p class="my-0 text-sm">Ahorro</p>
+            <p class="my-0 text-sm">Basico</p>
           </div>
           <div class="card-promocion__bottom">
-            <div class="card-promocion__info-line">
+            <div class="card-promocion__infoline">
               <i class="fa-solid fa-check" style="color: #26a215"></i>
               <span>Robo Hurto/lncendio Total</span>
               <span class="tooltip">
@@ -239,7 +240,7 @@
                 </span>
               </span>
             </div>
-            <div class="card-promocion__info-line">
+            <div class="card-promocion__infoline">
               <i class="fa-solid fa-check" style="color: #26a215"></i>
               <span>Robo Hurto/lncendio Total</span>
               <span class="tooltip">
@@ -249,7 +250,7 @@
                 </span>
               </span>
             </div>
-            <div class="card-promocion__info-line">
+            <div class="card-promocion__infoline">
               <i class="fa-solid fa-check" style="color: #26a215"></i>
               <span>Robo Hurto/lncendio Total</span>
               <span class="tooltip">
@@ -275,96 +276,29 @@
     </main>
     <!-- Modal dialog -->
     <dialog data-modal class="modal">
-      <div class="card-promocion card-promocion--big">
-        <div
-          class="card-promocion__top card-promocion__top--featured text-center"
-        >
-          <p class="mt-0 text-md strike-through">$25827/MES</p>
-          <p class="my-5">Precio Promocional</p>
+      <div class="modal-promocion">
+        <!-- Title of the card -->
+        <div class="modal-promocion__top">
           <p class="my-0">
             <span>$</span>
-            <span class="text-xl"> 21118 </span>
+            <span class="text-xxl"> 21118 </span>
             <span>/ MES</span>
           </p>
           <p class="my-0 text-sm">TERCEROS</p>
-          <p class="my-0 text-sm">Ahorro</p>
+          <p class="my-0 text-sm">Completo</p>
         </div>
-        <div class="card-promocion__bottom">
-          <div
-            class="card-promocion__info-line card-promocion__info-line-line-under"
-          >
-            <i class="fa-solid fa-check" style="color: #26a215"></i>
-            <span>Robo Hurto/lncendio Total</span>
-            <span class="tooltip">
-              <i class="fa-solid fa-circle-info" style="color: #8d9096"></i>
-              <span class="tooltip-text tooltip-text--left">
-                Aca iría info
-              </span>
-            </span>
+        <div class="modal-promocion__bottom">
+          <div class="pl-30">
+            <!-- Generated by js/infolineGenerator -->
+            <div class="infoline-placeholder"></div>
+            <div class="text-sm my-20">21731</div>
+            <div class="flex-center-container mt-30"></div>
           </div>
-          <div
-            class="card-promocion__info-line card-promocion__info-line-line-under"
-          >
-            <i class="fa-solid fa-check" style="color: #26a215"></i>
-            <span>Robo Hurto/lncendio Total</span>
-            <span class="tooltip">
-              <i class="fa-solid fa-circle-info" style="color: #8d9096"></i>
-              <span class="tooltip-text tooltip-text--left">
-                Aca iría info
-              </span>
-            </span>
+          <div class="flex-center-container">
+            <a href="solicitud_online.html" class="mt-20">
+              <button class="card-promocion__buy-button">COMPRAR</button>
+            </a>
           </div>
-          <div
-            class="card-promocion__info-line card-promocion__info-line-line-under"
-          >
-            <i class="fa-solid fa-check" style="color: #26a215"></i>
-            <span>Robo Hurto/lncendio Total</span>
-            <span class="tooltip">
-              <i class="fa-solid fa-circle-info" style="color: #8d9096"></i>
-              <span class="tooltip-text tooltip-text--left">
-                Aca iría info
-              </span>
-            </span>
-          </div>
-          <div
-            class="card-promocion__info-line card-promocion__info-line-line-under"
-          >
-            <i class="fa-solid fa-check" style="color: #26a215"></i>
-            <span>Robo Hurto/lncendio Total</span>
-            <span class="tooltip">
-              <i class="fa-solid fa-circle-info" style="color: #8d9096"></i>
-              <span class="tooltip-text tooltip-text--left">
-                Aca iría info
-              </span>
-            </span>
-          </div>
-          <div
-            class="card-promocion__info-line card-promocion__info-line-line-under"
-          >
-            <i class="fa-solid fa-check" style="color: #26a215"></i>
-            <span>Robo Hurto/lncendio Total</span>
-            <span class="tooltip">
-              <i class="fa-solid fa-circle-info" style="color: #8d9096"></i>
-              <span class="tooltip-text tooltip-text--left">
-                Aca iría info
-              </span>
-            </span>
-          </div>
-          <div
-            class="card-promocion__info-line card-promocion__info-line-line-under"
-          >
-            <i class="fa-solid fa-check" style="color: #26a215"></i>
-            <span>Robo Hurto/lncendio Total</span>
-            <span class="tooltip">
-              <i class="fa-solid fa-circle-info" style="color: #8d9096"></i>
-              <span class="tooltip-text tooltip-text--left">
-                Aca iría info
-              </span>
-            </span>
-          </div>
-          <a href="solicitud_online.html" class="mt-20">
-            <button class="card-promocion__buy-button">COMPRAR</button>
-          </a>
         </div>
       </div>
     </dialog>
@@ -397,4 +331,5 @@
     });
   </script>
   <script src="js/stepsDotGenerator.js"></script>
+  <script src="js/infolineGenerator.js"></script>
 </html>

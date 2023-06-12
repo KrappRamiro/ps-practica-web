@@ -1,0 +1,16 @@
+/* || Circle with the check in the middle*/
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.circle i {
+  font-size: 80px;
+}
