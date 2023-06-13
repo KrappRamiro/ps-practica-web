@@ -1,0 +1,69 @@
+/* Styles for the card slider container */
+.card-slider {
+  width: 100%; /* Set the card slider container to occupy the full width of its parent */
+  max-width: 330px; /* Adjust the maximum width of the card slider container as needed */
+  /* height: 200px; Set the height of the card slider */
+  overflow: hidden; /* Hide any overflowing content */
+  position: relative; /* Establish a positioning context for absolute positioning of buttons */
+  margin: 0 auto; /* Center the card slider horizontally using automatic left and right margins */
+}
+@media (width > 420px) {
+  .card-slider {
+    max-width: 400px;
+  }
+}
+@media (width > 576px) {
+  .card-slider {
+    max-width: 500px;
+  }
+}
+@media (width > 768px) {
+  .card-slider {
+    max-width: 700px;
+  }
+}
+
+/* Styles for the cards container */
+.card-slider .cards {
+  display: flex; /* Display the cards in a flex container */
+  transition: transform 0.5s; /* Apply a smooth transition effect when sliding the cards */
+  width: calc(
+    100% * 3
+  ); /* Set the width of the cards container to accommodate all three cards */
+}
+
+/* Styles for individual cards */
+.card-slider .card {
+  flex: 0 0 calc(100% / 3); /* Distribute the width equally among the three cards in the container */
+  height: 100%; /* Make each card occupy the full height of the card slider */
+  background-color: #f1f1f1; /* Set the background color of the cards */
+  border: 1px solid #ccc; /* Add a border around the cards */
+  text-align: center; /* Center the content of the cards horizontally */
+  /* font-size: 24px; Set the font size of the text inside the cards */
+  /* line-height: 200px; Center the text vertically inside the cards */
+}
+
+/* Styles for the previous and next buttons */
+.card-slider .prev,
+.card-slider .next {
+  position: absolute; /* Position the buttons absolutely within the card slider container */
+  top: 50%; /* Position the buttons at the vertical center of the card slider */
+  transform: translateY(
+    -50%
+  ); /* Adjust the vertical position of the buttons to center them precisely */
+  font-size: 24px; /* Set the font size of the buttons */
+  background: transparent; /* Set the background of the buttons to be transparent */
+  border: none; /* Remove the border around the buttons */
+  cursor: pointer; /* Set the cursor to indicate interactivity */
+  z-index: 1; /* Set a higher z-index for the buttons to ensure they appear above the cards */
+}
+
+/* Styles for the previous button */
+.card-slider .prev {
+  left: 10px; /* Position the previous button on the left side with a small left margin */
+}
+
+/* Styles for the next button */
+.card-slider .next {
+  right: 10px; /* Position the next button on the right side with a small right margin */
+}
