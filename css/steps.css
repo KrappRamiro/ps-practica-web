@@ -1,3 +1,4 @@
+/* Styles for a series of steps */
 .steps {
   display: flex;
   flex-direction: column;
@@ -5,60 +6,90 @@
   margin-bottom: 30px;
 }
 
+/* Styles for the title of the steps */
 .steps__title {
   font-weight: 700;
   font-size: 3rem;
   margin-bottom: 1px;
   color: var(--primary-color);
+  text-align: center;
 }
 
+/* Styles for the subtitle of the steps */
 .steps__subtitle {
+  text-align: center;
   margin-top: 2px;
   margin-bottom: 30px;
   font-weight: normal;
   color: var(--primary-color);
 }
 
+/* Styles for the progress indicator container */
 .steps__progress {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Styles for each individual step */
 .steps__step {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* Styles for the title of each step */
 .steps__step-title {
   margin-top: 20px;
   font-size: 0.8rem;
+  display: none;
+}
+@media (width > 576px) {
+  .steps__step-title {
+    display: inherit;
+  }
 }
 
+/* Styles for the number wrapper container */
 .steps__number-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  --indicator-size: 70px;
+  --indicator-size: 30px;
   width: var(--indicator-size);
   height: var(--indicator-size);
   margin: 5px;
   border-radius: 100%;
 }
+@media (width > 360px) {
+  .steps__number-wrapper {
+    --indicator-size: 40px;
+  }
+}
+@media (width > 576px) {
+  .steps__number-wrapper {
+    --indicator-size: 60px;
+  }
+}
+
+/* Styles for the completed step */
 .number-wrapper--completed {
   background-color: var(--primary-color-inactive);
 }
 
+/* Styles for the active step */
 .number-wrapper--active {
   position: relative;
   z-index: 5;
+  overflow: hidden;
 }
+
 .number-wrapper--active::before,
 .number-wrapper--active::after {
   content: "";
   position: absolute;
   border-radius: 50%;
-  /*Center the backgrounds*/
+  /* Center the backgrounds */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -78,26 +109,43 @@
   height: 140%;
 }
 
+/* Styles for the inactive step */
 .number-wrapper--inactive {
   background-color: var(--ps-light-grey);
 }
 
+/* Styles for the number inside the number wrapper */
 .steps__number {
   color: white;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   font-weight: bolder;
 }
+@media (width > 576px) {
+  .steps__number {
+    font-size: 1.5rem;
+  }
+}
 
+/* Styles for the separator between steps */
 .steps__separator {
   display: flex;
 }
 
+/* Styles for the dot separator */
 .steps__dot {
   position: relative;
-  top: -15px;
-  width: 4px;
-  height: 4px;
+  width: 2px;
+  height: 2px;
   border-radius: 50%;
   background-color: var(--ps-light-grey);
-  margin: 0 2px;
+  margin: 0 1px;
+}
+
+@media (width > 576px) {
+  .steps__dot {
+    top: -15px;
+    width: 4px;
+    height: 4px;
+    margin: 0 2px;
+  }
 }

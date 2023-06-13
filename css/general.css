@@ -1,3 +1,6 @@
+* {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   font-family: "Encode Sans", Arial, Helvetica, sans-serif;
@@ -20,7 +23,7 @@ body {
 .img-container img {
   max-width: 100%; /* Limit the image width to the container width */
   max-height: 100%; /* Limit the image height to the container height */
-  object-fit: cover; /* Resize the image to cover the container while maintaining aspect ratio */
+  object-fit: contain; /* Resize the image to cover the container while maintaining aspect ratio */
 }
 
 .w-75 {

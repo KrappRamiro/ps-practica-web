@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/steps.css" />
     <link rel="stylesheet" href="css/cotizacion.css" />
     <link rel="stylesheet" href="css/card-promocion.css" />
+    <link rel="stylesheet" href="css/card-datos.css" />
+    <link rel="stylesheet" href="css/card-promocion-mobile.css" />
     <link rel="stylesheet" href="css/modal-promocion.css" />
     <script
       src="https://kit.fontawesome.com/3ec9da0d5c.js"
@@ -77,6 +79,7 @@
             <br />
             Uso: 21729 - Particular.
           </div>
+          <div class="card-datos__elipsis">FIORINO FURGON CONFORT 1.5...</div>
         </div>
       </section>
       <section class="promociones">
@@ -273,6 +276,22 @@
         <button class="control-buttons__button">COTIZACIÓN (PDF)</button>
         <button class="control-buttons__button">CONTACTAME</button>
       </section>
+      <section class="promociones-mobile mt-30">
+        <div class="card-slider">
+          <button class="prev">&lt;</button>
+          <div class="cards">
+            <div class="card">Card 1</div>
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+          </div>
+          <button class="next">&gt;</button>
+        </div>
+        <script src="js/cardSlider.js"></script>
+      </section>
+      <section class="control-buttons control-buttons--mobile">
+        <button class="control-buttons__button">VOLVER</button>
+        <button class="control-buttons__button">CONTACTAME</button>
+      </section>
     </main>
     <!-- Modal dialog -->
     <dialog data-modal class="modal">
@@ -303,33 +322,34 @@
       </div>
     </dialog>
     <section id="footer"></section>
-  </body>
-  <script>
-    readHTMLFile("components/footer.html", "footer");
-    readHTMLFile("components/header.html", "header");
-    readHTMLFile("components/css.html", "css");
-    const openButton = document.querySelector("[data-open-modal]");
-    const modal = document.querySelector("[data-modal]");
 
-    openButton.addEventListener("click", () => {
-      modal.showModal();
-      modal.classList.add("show");
-    });
-    modal.addEventListener("click", (e) => {
-      const modalDimensions = modal.getBoundingClientRect();
-      if (
-        e.clientX < modalDimensions.left ||
-        e.clientX > modalDimensions.right ||
-        e.clientY < modalDimensions.top ||
-        e.clientY > modalDimensions.bottom
-      ) {
-        modal.classList.remove("show"); // Remove 'show' class to trigger animation
-        setTimeout(() => {
-          modal.close();
-        }, 300); // Wait for animation to complete before closing
-      }
-    });
-  </script>
-  <script src="js/stepsDotGenerator.js"></script>
-  <script src="js/infolineGenerator.js"></script>
+    <script>
+      readHTMLFile("components/footer.html", "footer");
+      readHTMLFile("components/header.html", "header");
+      readHTMLFile("components/css.html", "css");
+      const openButton = document.querySelector("[data-open-modal]");
+      const modal = document.querySelector("[data-modal]");
+
+      openButton.addEventListener("click", () => {
+        modal.showModal();
+        modal.classList.add("show");
+      });
+      modal.addEventListener("click", (e) => {
+        const modalDimensions = modal.getBoundingClientRect();
+        if (
+          e.clientX < modalDimensions.left ||
+          e.clientX > modalDimensions.right ||
+          e.clientY < modalDimensions.top ||
+          e.clientY > modalDimensions.bottom
+        ) {
+          modal.classList.remove("show"); // Remove 'show' class to trigger animation
+          setTimeout(() => {
+            modal.close();
+          }, 300); // Wait for animation to complete before closing
+        }
+      });
+    </script>
+    <script src="js/stepsDotGenerator.js"></script>
+    <script src="js/infolineGenerator.js"></script>
+  </body>
 </html>

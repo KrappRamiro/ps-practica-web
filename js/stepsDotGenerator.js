@@ -4,7 +4,7 @@ const progress = document.querySelector(".steps__progress");
 // Get all the steps__step elements
 const steps = progress.querySelectorAll(".steps__step");
 
-const numberOfDots = 8;
+const numberOfDots = 6;
 
 // Loop through each step element except the last one
 for (let i = 0; i < steps.length - 1; i++) {

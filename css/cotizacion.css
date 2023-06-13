@@ -5,56 +5,46 @@
   align-items: center;
   justify-content: center;
 }
-.card-datos {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  margin: 100px 50px;
-  padding: 15px;
-  border-radius: 10px;
-  background-color: whitesmoke;
-  border: 1px black solid;
-}
-@media (width > 600px) {
-  .card-datos {
-    flex-direction: row;
-  }
-}
-
-.card-datos__icono,
-.card-datos__title,
-.card-datos__datos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-}
-
-.card-datos__icono {
-  font-size: 3rem;
-  color: var(--primary-color);
-}
-
-.card-datos__title {
-  font-size: 1.5rem;
-}
 
 .promociones {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: center; /* Add this to center the cards horizontally */
   align-items: center;
 }
+.promociones-mobile {
+  width: 100vw;
+}
+
+@media (width > 992px) {
+  .promociones {
+    display: flex;
+  }
+  .promociones-mobile {
+    display: none;
+  }
+}
 
 .control-buttons {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
   gap: 1rem;
+}
+.control-buttons--mobile {
+  display: flex;
+}
+
+@media (width > 992px) {
+  .control-buttons {
+    display: flex;
+  }
+  .control-buttons--mobile {
+    display: none;
+  }
 }
 
 .control-buttons__button {
@@ -63,7 +53,13 @@
   border: 1px darkgray solid;
   border-radius: 3px;
   padding: 10px 5px;
-  min-width: 190px;
+  min-width: 130px;
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+@media (width > 576px) {
+  .control-buttons__button {
+    min-width: 190px;
+  }
 }
