@@ -520,36 +520,7 @@
         <button class="control-buttons__button">CONTACTAME</button>
       </section>
     </main>
-    <div id="resolution"></div>
 
-    <script>
-      console.log("Is this even loading?");
-      // Get the resolution div element
-      const resolutionDiv = document.getElementById("resolution");
-
-      // Function to update the resolution text
-      function updateResolution() {
-        // Get the screen width and height
-        const screenWidth =
-          window.innerWidth ||
-          document.documentElement.clientWidth ||
-          document.body.clientWidth;
-        const screenHeight =
-          window.innerHeight ||
-          document.documentElement.clientHeight ||
-          document.body.clientHeight;
-
-        console.log(`Screen Resolution: ${screenWidth} x ${screenHeight}`);
-        // Update the resolution text in the div
-        resolutionDiv.textContent = `Screen Resolution: ${screenWidth} x ${screenHeight}`;
-      }
-
-      // Call the updateResolution function initially
-      updateResolution();
-      setInterval(updateResolution, 100);
-      // Add an event listener for window resize
-      window.addEventListener("resize", updateResolution);
-    </script>
     <!-- Modal dialog -->
     <dialog data-modal class="modal">
       <div class="modal-promocion">
