@@ -17,9 +17,6 @@
 }
 
 @media (width >= 992px) {
-  body {
-    background-color: red;
-  }
   .promociones {
     display: flex;
   }
