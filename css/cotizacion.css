@@ -1,3 +1,4 @@
+/* Cotizacion Section */
 .cotizacion {
   background-color: var(--ps-light-grey);
   display: flex;
@@ -6,25 +7,28 @@
   justify-content: center;
 }
 
+/* Promociones Container */
 .promociones {
   display: none;
   flex-direction: row;
-  justify-content: center; /* Add this to center the cards horizontally */
+  justify-content: center; /* Center the cards horizontally */
   align-items: center;
 }
 .promociones-mobile {
-  width: 100vw;
+  width: 100vw; /* Set width to 100% of the viewport width */
 }
 
+/* Media Query for Screens with Width >= 992px */
 @media (width >= 992px) {
   .promociones {
-    display: flex;
+    display: flex; /* Show the promociones container as flex */
   }
   .promociones-mobile {
-    display: none;
+    display: none; /* Hide the promociones-mobile container */
   }
 }
 
+/* Control Buttons */
 .control-buttons {
   display: none;
   flex-direction: row;
@@ -35,18 +39,20 @@
   gap: 1rem;
 }
 .control-buttons--mobile {
-  display: flex;
+  display: flex; /* Show the control buttons in mobile view */
 }
 
+/* Media Query for Screens with Width > 992px */
 @media (width > 992px) {
   .control-buttons {
-    display: flex;
+    display: flex; /* Show the control buttons */
   }
   .control-buttons--mobile {
-    display: none;
+    display: none; /* Hide the control buttons in mobile view */
   }
 }
 
+/* Control Buttons - Button */
 .control-buttons__button {
   background-color: var(--ps-grey);
   color: white;
@@ -58,8 +64,9 @@
   font-weight: 600;
 }
 
+/* Media Query for Screens with Width > 576px */
 @media (width > 576px) {
   .control-buttons__button {
-    min-width: 190px;
+    min-width: 190px; /* Adjust the minimum width of the buttons */
   }
 }

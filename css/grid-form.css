@@ -1,37 +1,48 @@
+/* Grid Form */
 .grid-form {
   padding: 50px 20px;
 }
+
+/* 2-Column Grid */
 .grid-2-col {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
 }
-@media (width >= 576px) {
+
+/* Media Query for Screens with Minimum Width 576px */
+@media (min-width: 576px) {
   .grid-2-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* 3-Column Grid */
 .grid-3-col {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
 }
-@media (width >= 576px) {
+
+/* Media Query for Screens with Minimum Width 576px */
+@media (min-width: 576px) {
   .grid-3-col {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
+/* 2-Column Grid with Ratio 9:1 */
 .grid-2-col-9-to-1 {
   display: grid;
   grid-template-columns: 9fr 1fr;
   align-items: center;
 }
 
+/* 2-Column Grid with Ratio 1:2 */
 .grid-2-col-1-to-2 {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -39,45 +50,57 @@
   gap: 8px;
 }
 
+/* Grid Form Input */
 .grid-form__input {
   padding: 10px;
   border: 1px rgba(0, 0, 0, 0.2) solid;
   border-radius: 5px;
-  box-sizing: border-box; /*Para evitar el overflow usando padding*/
+  box-sizing: border-box;
 }
+
+/* Small Grid Form Input */
 .grid-form__input--ssm {
   width: 60px;
   font-size: 0.7rem;
 }
+
+/* Medium Grid Form Input */
 .grid-form__input--sm {
   width: 130px;
 }
 
+/* Grid Form Cell Container Label */
 .grid-form__cell-container label {
   text-overflow: ellipsis;
 }
 
-@media (width < 576px) {
+/* Media Query for Screens with Maximum Width 575px */
+@media (max-width: 575px) {
   .grid-form__cell-container {
     width: 90%;
   }
 }
 
+/* Full Width Grid Form Input */
 .grid-form__input--fullwidth {
-  width: 100%; /* Use the full width of the parent div */
+  width: 100%;
 }
 
+/* Full Width Grid Form Input Styles */
 .grid-form__input--fullwidth:not([type="email"]),
-.grid-form__input--fullwidth option, /*Add support to <select>*/
+.grid-form__input--fullwidth option,
 .grid-form__input--fullwidth::placeholder {
   font-stretch: condensed;
   text-transform: uppercase;
 }
 
+/* Grid Form Radio Title */
 .grid-form__radio-title {
   color: var(--primary-color);
   font-weight: bold;
 }
+
+/* Grid Form Radio Input */
 .grid-form__radio-input {
   appearance: none;
   -webkit-appearance: none;
@@ -92,7 +115,7 @@
   background-color: white;
 }
 
-/* Style the inner circle */
+/* Style the inner circle for Checked Radio Input */
 input[type="radio"]:checked::before {
   content: "";
   position: absolute;
@@ -105,10 +128,12 @@ input[type="radio"]:checked::before {
   transform: translate(-50%, -50%);
 }
 
+/* Grid Form Input Hint */
 .grid-form__input-hint {
   height: 100%;
 }
 
+/* Grid Form Buttons */
 .grid-form__buttons {
   display: flex;
   flex-direction: column;
@@ -116,27 +141,35 @@ input[type="radio"]:checked::before {
   justify-content: center;
   gap: 20px;
 }
-@media (width>=768px) {
+
+/* Media Query for Screens with Minimum Width 768px */
+@media (min-width: 768px) {
   .grid-form__buttons {
     flex-direction: row;
   }
 }
 
-@media (width<576px) {
+/* Media Query for Screens with Maximum Width 575px */
+@media (max-width: 575px) {
   .grid-form__buttons--disable-on-sm {
     display: none;
   }
 }
+
+/* Grid Form Buttons to Appear Under Small Screens */
 .grid-form__buttons--appear-under-sm {
   display: none;
 }
-@media (width<576px) {
+
+/* Media Query for Screens with Maximum Width 575px */
+@media (max-width: 575px) {
   .grid-form__buttons--appear-under-sm {
     display: flex;
     flex-direction: row;
   }
 }
 
+/* Grid Form Submit Button */
 .grid-form__submit-button {
   text-align: center;
   padding: 10px 40px;
@@ -148,12 +181,15 @@ input[type="radio"]:checked::before {
   margin-left: 10px;
   margin-right: 10px;
 }
-@media (width >= 576px) {
+
+/* Media Query for Screens with Minimum Width 576px */
+@media (min-width: 576px) {
   .grid-form__submit-button {
     padding: 10px 70px;
   }
 }
 
+/* Grid Form Alternate Button */
 .grid-form__alternate-button {
   padding: 10px 40px;
   border-radius: 5px;
@@ -164,10 +200,12 @@ input[type="radio"]:checked::before {
   font-size: 1.2rem;
 }
 
+/* Captcha */
 .captcha {
   margin-top: 20px;
 }
 
+/* Grid Form Disclaimers */
 .grid-form__disclaimers {
   font-size: 0.7rem;
   font-stretch: condensed;

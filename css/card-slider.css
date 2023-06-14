@@ -7,17 +7,19 @@
   position: relative; /* Establish a positioning context for absolute positioning of buttons */
   margin: 0 auto; /* Center the card slider horizontally using automatic left and right margins */
 }
-@media (width > 420px) {
+
+/* Media queries for different screen widths */
+@media (min-width: 421px) {
   .card-slider {
     max-width: 400px;
   }
 }
-@media (width > 576px) {
+@media (min-width: 577px) {
   .card-slider {
     max-width: 500px;
   }
 }
-@media (width > 768px) {
+@media (min-width: 769px) {
   .card-slider {
     max-width: 700px;
   }

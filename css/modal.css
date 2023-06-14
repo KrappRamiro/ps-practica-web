@@ -1,3 +1,4 @@
+/* Modal */
 .modal {
   padding: 0;
   border: 0;
@@ -9,9 +10,13 @@
   opacity: 0; /* Initially hidden */
   transition: opacity 0.3s ease-in-out; /* Smooth transition */
 }
+
+/* Show Modal */
 .modal.show {
   opacity: 1; /* Show the dialog */
 }
+
+/* Fade In Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -21,6 +26,7 @@
   }
 }
 
+/* Modal Backdrop */
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.3);
 }

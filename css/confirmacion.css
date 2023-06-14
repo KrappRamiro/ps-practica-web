@@ -1,5 +1,4 @@
-/* || Circle with the check in the middle*/
-
+/* Styles for the circle with the check in the middle */
 .circle {
   width: 150px;
   height: 150px;
@@ -12,5 +11,5 @@
 }
 
 .circle i {
-  font-size: 80px;
+  font-size: 80px; /* Set the font size of the icon inside the circle */
 }

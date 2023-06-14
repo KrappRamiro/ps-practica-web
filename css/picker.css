@@ -1,3 +1,4 @@
+/* Picker */
 .picker {
   display: flex;
   flex-direction: column;
@@ -8,32 +9,43 @@
   padding: 5px 10px 10px 5px;
   box-sizing: border-box;
 }
-@media (width > 360px) {
+
+/* Media Query: Min-width 360px */
+@media (min-width: 360px) {
+  /* CSS rules to apply when the screen width is 360 pixels or more */
   .picker {
     padding: 10px 20px 10px 20px;
   }
 }
-@media (width > 576px) {
+
+/* Media Query: Min-width 576px */
+@media (min-width: 576px) {
+  /* CSS rules to apply when the screen width is 576 pixels or more */
   .picker {
     padding: 15px 30px 30px 15px;
   }
 }
 
+/* Picker Title */
 .picker__title {
   text-align: center;
   font-weight: 400;
   color: gray;
   font-size: 1.5rem;
-  margin-top: 0px 5px 0px 5px;
+  margin: 0px 5px;
   max-width: fit-content;
 }
-@media (width > 576px) {
+
+/* Media Query: Min-width 576px */
+@media (min-width: 576px) {
+  /* CSS rules to apply when the screen width is 576 pixels or more */
   .picker__title {
     font-size: 2.5rem;
-    margin-top: 0px 10px 0px 10px;
+    margin: 0px 10px;
   }
 }
 
+/* Picker Options Wrapper */
 .picker__options-wrapper {
   width: 15rem;
   display: flex;
@@ -42,28 +54,36 @@
   flex-direction: column;
 }
 
-@media (width > 576px) {
+/* Media Query: Min-width 576px */
+@media (min-width: 576px) {
+  /* CSS rules to apply when the screen width is 576 pixels or more */
   .picker__options-wrapper {
     width: 20rem;
   }
 }
+
+/* Picker Option */
 .picker__option {
-  box-sizing: border-box; /*Make the element adjust its size to the parent wrapper*/
+  box-sizing: border-box;
   width: 100%;
   display: flex;
   align-items: center;
   background-color: var(--primary-color);
   border-radius: 7px;
-  padding: 10px 10px;
+  padding: 10px;
   margin: 2px 30px;
   font-size: 1rem;
 }
-@media (width > 576px) {
+
+/* Media Query: Min-width 576px */
+@media (min-width: 576px) {
+  /* CSS rules to apply when the screen width is 576 pixels or more */
   .picker__option {
     font-size: 1.5rem;
   }
 }
 
+/* Picker Icon */
 .picker__icon {
   display: flex;
   justify-content: center;
@@ -72,15 +92,21 @@
   width: 1.4rem;
   margin-left: 5px;
 }
+
+/* Picker Icon i */
 .picker__icon i {
   font-size: 1.2rem;
 }
 
-@media (width > 576px) {
+/* Media Query: Min-width 576px */
+@media (min-width: 576px) {
+  /* CSS rules to apply when the screen width is 576 pixels or more */
   .picker__icon {
     font-size: 1.5rem;
   }
 }
+
+/* Picker Name */
 .picker__name {
   color: white;
   margin-left: 10px;

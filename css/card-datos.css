@@ -1,3 +1,4 @@
+/* Styles for the card container */
 .card-datos {
   display: flex;
   flex-direction: row;
@@ -7,14 +8,17 @@
   padding: 15px;
   border-radius: 10px;
   background-color: whitesmoke;
-  border: 1px black solid;
+  border: 1px solid black;
 }
-@media (width > 576px) {
+
+/* Media query for screens wider than 576px */
+@media (min-width: 576px) {
   .card-datos {
     margin: 100px 50px;
   }
 }
 
+/* Styles for the icon, title, and data elements within the card */
 .card-datos__icono,
 .card-datos__title,
 .card-datos__datos {
@@ -29,7 +33,9 @@
   font-size: 2rem;
   color: var(--primary-color);
 }
-@media (width > 576px) {
+
+/* Media query for screens wider than 576px */
+@media (min-width: 576px) {
   .card-datos__icono {
     font-size: 3rem;
   }
@@ -39,7 +45,9 @@
   font-size: 1.5rem;
   display: none;
 }
-@media (width > 576px) {
+
+/* Media query for screens wider than 576px */
+@media (min-width: 576px) {
   .card-datos__title {
     display: block;
   }
@@ -48,10 +56,13 @@
 .card-datos__datos {
   display: none;
 }
+
 .card-datos__elipsis {
   display: block;
 }
-@media (width > 576px) {
+
+/* Media query for screens wider than 576px */
+@media (min-width: 576px) {
   .card-datos__datos {
     display: block;
   }

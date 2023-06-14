@@ -1,22 +1,27 @@
+/* Footer Image Wrapper */
 .footer__image-wrapper {
-  width: 95vw; /* Set container width to 100% of the viewport width */
+  width: 95vw; /* Set container width to 95% of the viewport width */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
-  margin: 10px auto 10px auto;
+  margin: 10px auto; /* Center the container horizontally and provide top and bottom margin */
 }
-@media (width > 992px) {
+
+/* Media Query for Screens with Minimum Width 992px */
+@media (min-width: 992px) {
   .footer__image-wrapper {
-    height: 20vh; /* Set container height to 10% of the viewport height */
-    flex-direction: row;
-    margin: 50px auto 60px auto;
+    height: 20vh; /* Set container height to 20% of the viewport height */
+    flex-direction: row; /* Arrange items horizontally */
+    margin: 50px auto 60px auto; /* Adjust the margin */
   }
 }
+
+/* Footer Disclaimer */
 .footer__disclaimer {
   text-align: center;
-  margin: 10px 15%;
+  margin: 10px 15%; /* Provide horizontal margins */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +29,7 @@
 }
 
 .footer__disclaimer-title {
-  color: var(--primary-color);
+  color: var(--primary-color); /* Set text color using a custom variable */
   font-size: 0.9rem;
 }
 
@@ -32,27 +37,32 @@
   font-size: 0.7rem;
 }
 
+/* Footer Logos */
 .footer__logos {
   padding-left: 10px;
   padding-right: 20px;
   margin-top: 30px;
   height: 150px;
-  background-color: var(--ps-light-grey);
+  background-color: var(
+    --ps-light-grey
+  ); /* Set background color using a custom variable */
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-@media (width >= 576px) {
+
+/* Media Query for Screens with Minimum Width 576px */
+@media (min-width: 576px) {
   .footer__logos {
-    justify-content: space-between;
+    justify-content: space-between; /* Distribute logos evenly */
   }
 }
 
 .footer__left-logos {
   width: 150px;
-  display: none;
+  display: none; /* Hide the left logos */
 }
 
 .footer__right-logos {
@@ -61,11 +71,13 @@
   flex-direction: row !important;
 }
 
-@media (width >= 576px) {
+/* Media Query for Screens with Minimum Width 576px */
+@media (min-width: 576px) {
   .footer__left-logos {
-    display: flex;
+    display: flex; /* Show the left logos */
   }
 }
+
 .footer__contact-paragraph p {
   font-size: 0.8rem;
   margin-bottom: 1px;

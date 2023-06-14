@@ -24,7 +24,9 @@
   padding: 20px 40px;
   font-weight: 500;
 }
-@media (width > 576px) {
+
+/* Media query for screens wider than 576px */
+@media (min-width: 576px) {
   .card-promocion__top {
     padding: 20px 80px;
   }
@@ -75,8 +77,6 @@
   padding: 10px 50px;
   text-transform: uppercase;
 }
-
-/* || Strikethrough */
 
 /* Strikethrough effect for discounts */
 .strike-through {

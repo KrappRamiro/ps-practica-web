@@ -1,3 +1,4 @@
+/* Picker Footer Item Wrapper */
 .picker-footer__item-wrapper {
   display: flex;
   flex-direction: column;
@@ -5,6 +6,7 @@
   justify-content: center;
 }
 
+/* Picker Footer Item */
 .picker-footer__item {
   font-size: 1rem;
   text-align: center;
@@ -12,26 +14,34 @@
   margin-top: 10px;
 }
 
+/* Picker Footer Image */
 .picker-footer__image {
   max-width: 30%;
   max-height: 30%;
 }
 
+/* Picker Footer Disclaimer */
 .picker-footer__disclaimer {
   font-size: 0.6rem;
 }
 
+/* Media Query: Min-width 660px */
 @media (min-width: 660px) {
-  /* CSS rules to apply when the screen width is 360 pixels or more */
+  /* CSS rules to apply when the screen width is 660 pixels or more */
+
+  /* Update Picker Footer Item Wrapper */
   .picker-footer__item-wrapper {
     flex-direction: row;
   }
+
+  /* Update Picker Footer Item */
   .picker-footer__item {
     font-size: 2vmin;
     width: 20%;
     padding: 20px;
   }
 
+  /* Update Picker Footer Image */
   .picker-footer__image {
     max-width: 100%;
     max-height: 100%;

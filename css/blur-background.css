@@ -4,27 +4,31 @@ How to use:
     <div class="blur-background">
       <div class="blur-overlay"></div>
       <div class="blur-content">
-				<!-- YOUR CONTENT HERE -->
-			</div>
-		</div>
+        <!-- YOUR CONTENT HERE -->
+      </div>
+    </div>
 */
+
+/* Styles for the container of the blur background */
 .blur-background {
   position: relative;
-  background-image: url(../img/background.jpg);
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
+  background-image: url(../img/background.jpg); /* Set the background image URL */
+  background-size: cover; /* Scale the background image to cover the container */
+  background-position: center; /* Position the background image at the center */
+  overflow: hidden; /* Hide any content that exceeds the container's boundaries */
 }
 
+/* Styles for the overlay that creates the blur effect */
 .blur-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px); /* Apply a blur effect to the overlay */
 }
 
+/* Styles for an additional layer to control the overlay's color and opacity */
 .blur-overlay::after {
   content: "";
   position: absolute;
@@ -37,10 +41,11 @@ How to use:
     255,
     255,
     0.5
-  ); /* Adjust the color and opacity as desired */
+  ); /* Set the color and opacity of the overlay */
 }
 
+/* Styles for the content within the blur background container */
 .blur-content {
   position: relative;
-  z-index: 1;
+  z-index: 1; /* Ensure the content appears above the overlay */
 }
