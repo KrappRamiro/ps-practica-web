@@ -70,3 +70,9 @@
     min-width: 190px; /* Adjust the minimum width of the buttons */
   }
 }
+
+.numero-telefono {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}

@@ -18,7 +18,7 @@
     ></script>
     <title>Solicitud Online</title>
     <link rel="stylesheet" href="css/steps.css" />
-    <link rel="stylesheet" href="css/grid-form.css" />
+    <link rel="stylesheet" href="css/card-datos.css" />
     <script src="js/fileReader.js"></script>
   </head>
   <body>
@@ -61,8 +61,24 @@
     </nav>
     <main class="flex-center-container bg-light-gray">
       <section class="mw-1100">
+        <div class="card-datos">
+          <div class="card-datos__icono">
+            <i class="fa-solid fa-car"></i>
+          </div>
+          <div class="card-datos__title">Datos de vehiculo</div>
+          <div class="card-datos__datos">
+            FIORINO FURGON CONFORT Año 2010 <br />
+            Cotización Nro: 86471769 <br />
+            Suma asegurada: S2.057.000
+            <br />
+            Equipo de rastreo obligatorio 21752 - No.
+            <br />
+            Uso: 21729 - Particular.
+          </div>
+          <div class="card-datos__elipsis">FIORINO FURGON CONFORT 1.5...</div>
+        </div>
         <form class="grid-form">
-          <h1>Datos Personales</h1>
+          <h1 class="ml-20">Datos Personales</h1>
           <section class="grid-3-col">
             <!-- FIRST ROW -->
             <!-- NOMBRE -->
@@ -93,12 +109,14 @@
             <!-- Fecha de nacimiento -->
             <div class="grid-form__cell-container">
               <div class="grid-2-col">
-                <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+                <label for="fecha-nacimiento" style="align-self: self-start"
+                  >FECHA DE NACIMIENTO</label
+                >
                 <input
                   id="fecha-nacimiento"
                   class="grid-form__input grid-form__input--fullwidth"
                   type="text"
-                  placeholder="Fecha de nacimiento *"
+                  placeholder="DD/MM/AAAA *"
                 />
               </div>
             </div>
@@ -187,37 +205,73 @@
             <!-- FIFTH ROW -->
             <!-- Persona politicamente expuesta -->
             <div
-              class="grid-form__cell-container grid-2-col flex-center-container"
+              class="grid-form__cell-container grid-2-col align-left-under-sm"
             >
-              <div class="grid-form__radio-title">
-                Sos una persona politicamente expuesta?
+              <div class="grid-form__radio-title mb-5">
+                ¿Sos una persona politicamente expuesta?
               </div>
-              <div>
-                <input
-                  type="radio"
-                  name="cero_km"
-                  id="yes"
-                  class="grid-form__radio-input"
-                />
-                <label for="yes">Sí</label>
-                <input
-                  type="radio"
-                  name="cero_km"
-                  id="no"
-                  class="grid-form__radio-input"
-                />
-                <label for="no">No</label><br />
+              <div class="d-flex flex-row flex-column-sm">
+                <div>
+                  <input
+                    type="radio"
+                    name="cero_km"
+                    id="yes"
+                    class="grid-form__radio-input"
+                  />
+                  <label for="yes">Sí</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="cero_km"
+                    id="no"
+                    class="grid-form__radio-input"
+                    checked="checked"
+                  />
+                  <label for="no">No</label><br />
+                </div>
               </div>
             </div>
           </section>
-
-          <h1>Domicilio</h1>
+          <h1 class="ml-20">Domicilio</h1>
           <section>
-            <div class="grid-2-col-1-to-2">
-              <!-- Empty div -->
-              <div></div>
-              <!-- CALLE -->
-              <div class="grid-form__cell-container">
+            <div class="display-after-sm">
+              <div class="grid-2-col-1-to-2">
+                <!-- Empty div -->
+                <div></div>
+                <!-- CALLE -->
+                <div class="grid-form__cell-container">
+                  <input
+                    class="grid-form__input grid-form__input--fullwidth"
+                    type="text"
+                    placeholder="CALLE *"
+                  />
+                </div>
+                <!-- CODIGO POSTAL -->
+                <div class="grid-form__cell-container">
+                  <input
+                    class="grid-form__input grid-form__input--fullwidth"
+                    type="text"
+                    placeholder="CODIGO POSTAL *"
+                  />
+                </div>
+                <div class="grid-form__cell-container">
+                  <select class="grid-form__input grid-form__input--fullwidth">
+                    <option value="" disabled selected>...</option>
+                    <option value="audi">placeholder</option>
+                    <option value="bmw">placeholder</option>
+                    <option value="mercedes">placeholder</option>
+                    <option value="toyota">placeholder</option>
+                    <option value="honda">placeholder</option>
+                    <option value="ford">placeholder</option>
+                    <option value="chevrolet">placeholder</option>
+                    <option value="volkswagen">placeholder</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="display-none-sm d-flex flex-column gap-10">
+              <div class="grid-form__cell-container ml-20">
                 <input
                   class="grid-form__input grid-form__input--fullwidth"
                   type="text"
@@ -225,14 +279,14 @@
                 />
               </div>
               <!-- CODIGO POSTAL -->
-              <div class="grid-form__cell-container">
+              <div class="grid-form__cell-container ml-20">
                 <input
                   class="grid-form__input grid-form__input--fullwidth"
                   type="text"
                   placeholder="CODIGO POSTAL *"
                 />
               </div>
-              <div class="grid-form__cell-container">
+              <div class="grid-form__cell-container ml-20">
                 <select class="grid-form__input grid-form__input--fullwidth">
                   <option value="" disabled selected>...</option>
                   <option value="audi">placeholder</option>
@@ -292,7 +346,7 @@
               </div>
             </div>
           </section>
-          <h1>Datos del Vehiculo</h1>
+          <h1 class="ml-20">Datos del Vehiculo</h1>
           <section>
             <div class="grid-3-col">
               <div class="grid-form__cell-container">
@@ -318,7 +372,7 @@
               </div>
             </div>
           </section>
-          <h1>Datos de Inspección</h1>
+          <h1 class="ml-20">Datos de Inspección</h1>
           <section>
             <div class="grid-3-col">
               <!-- Telefono -->
@@ -372,7 +426,7 @@
               </div>
             </div>
           </section>
-          <h1>Forma de Pago</h1>
+          <h1 class="ml-20">Forma de Pago</h1>
           <section>
             <div class="grid-3-col">
               <div class="grid-form__cell-container">

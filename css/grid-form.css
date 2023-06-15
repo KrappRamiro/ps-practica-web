@@ -98,6 +98,7 @@
 .grid-form__radio-title {
   color: var(--primary-color);
   font-weight: bold;
+  margin-left: 10px;
 }
 
 /* Grid Form Radio Input */

@@ -1,6 +1,6 @@
 /* Styles for the card slider container */
 .card-slider {
-  width: 100%; /* Set the card slider container to occupy the full width of its parent */
+  width: 85%; /* Set the card slider container to occupy the full width of its parent */
   max-width: 330px; /* Adjust the maximum width of the card slider container as needed */
   /* height: 200px; Set the height of the card slider */
   overflow: hidden; /* Hide any overflowing content */
@@ -25,6 +25,10 @@
   }
 }
 
+.card-slider-wrapper {
+  position: relative;
+}
+
 /* Styles for the cards container */
 .card-slider .cards {
   display: flex; /* Display the cards in a flex container */
@@ -46,8 +50,8 @@
 }
 
 /* Styles for the previous and next buttons */
-.card-slider .prev,
-.card-slider .next {
+.prev,
+.next {
   position: absolute; /* Position the buttons absolutely within the card slider container */
   top: 50%; /* Position the buttons at the vertical center of the card slider */
   transform: translateY(
@@ -61,11 +65,11 @@
 }
 
 /* Styles for the previous button */
-.card-slider .prev {
+.prev {
   left: 10px; /* Position the previous button on the left side with a small left margin */
 }
 
 /* Styles for the next button */
-.card-slider .next {
+.next {
   right: 10px; /* Position the next button on the right side with a small right margin */
 }
