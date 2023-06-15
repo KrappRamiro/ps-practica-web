@@ -14,7 +14,7 @@
 /* Media query for screens wider than 576px */
 @media (min-width: 576px) {
   .card-datos {
-    margin: 100px 50px;
+    margin: 60px 50px;
   }
 }
 
